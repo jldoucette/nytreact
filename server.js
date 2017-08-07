@@ -28,8 +28,8 @@ app.listen(PORT, function() {
   console.log("App running on port " + PORT+"!");
 });
 
-// mongoose.connect("mongodb:");
-mongoose.connect("mongodb://localhost/nytreact");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds157479.mlab.com:57479/heroku_lwth6kms");
+// mongoose.connect("mongodb://localhost/nytreact");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
